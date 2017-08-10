@@ -47,12 +47,25 @@ h1 {
 }
 
 .display_value {
+ margin: 0;
  color: #2F4F4F;
- font-size: 30px;
+ font-size: 20px;
  text-align: right;
  padding-right: 20px;
  padding-left: 20px;
- margin-top: 12%;
+ padding-top: 10px;
+ word-wrap: break-word;
+}
+
+.display_eval {
+ margin: 0;
+ color: #4d4dff;
+ font-size: 20px;
+ text-align: right;
+ padding-right: 20px;
+ padding-left: 20px;
+ padding-top: 10px;
+ word-wrap: break-word;
 }
 
 #calculator button:focus {
@@ -62,4 +75,8 @@ h1 {
 
 #calculator .operator:focus {
  color: #E0EEEE;
+}
+
+.display hr {
+ border-color: #2F4F4F;
 }

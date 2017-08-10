@@ -1,4 +1,5 @@
 let display = document.querySelector('.display_value');
+let displayEval = document.querySelector('.display_eval');
 let evaluation = [];
 let answer;
 
@@ -11,6 +12,7 @@ for (let i = 0; i < numberInput.length; i++) {
       evaluation += this.value;
       display.innerHTML = evaluation;
       console.log(evaluation);
+      console.log(evaluation.length);
    });
 }
 
@@ -20,7 +22,7 @@ let evaluate = document.querySelector('.evaluate');
 
 evaluate.addEventListener('click', function(){
    let answer = (eval(evaluation));
-   display.innerHTML = answer;
+   displayEval.innerHTML = '= ' + answer;
    console.log(eval(evaluation));
 });
 
@@ -31,6 +33,7 @@ let clear = document.querySelector('.clear');
 clear.addEventListener('click', function(){
    evaluation = [];
    display.innerHTML = evaluation;
+   displayEval.innerHTML = evaluation;
    console.log(evaluation);
 });
 
