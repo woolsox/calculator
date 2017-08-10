@@ -1,24 +1,13 @@
-let display = document.querySelector('.display');
+let display = document.querySelector('.display_value');
 let evaluation = [];
+let answer;
 
-// number input buttons
+// integer/operator input buttons
 
-let numberInput = document.querySelectorAll('.number');
+let numberInput = document.querySelectorAll('.input');
 
 for (let i = 0; i < numberInput.length; i++) {
    numberInput[i].addEventListener('click', function(){
-      evaluation += this.value;
-      display.innerHTML = evaluation;
-      console.log(evaluation);
-   });
-}
-
-// operator input buttons
-
-let operatorInput = document.querySelectorAll('.operator');
-
-for (let i = 0; i < operatorInput.length; i++) {
-   operatorInput[i].addEventListener('click', function(){
       evaluation += this.value;
       display.innerHTML = evaluation;
       console.log(evaluation);
@@ -30,7 +19,8 @@ for (let i = 0; i < operatorInput.length; i++) {
 let evaluate = document.querySelector('.evaluate');
 
 evaluate.addEventListener('click', function(){
-   display.innerHTML = (eval(evaluation));
+   let answer = (eval(evaluation));
+   display.innerHTML = answer;
    console.log(eval(evaluation));
 });
 
@@ -44,8 +34,4 @@ clear.addEventListener('click', function(){
    console.log(evaluation);
 });
 
-// length check
-
-if (evaluation.length > 15) {
-   console.log('too long!');
-}
+// number check

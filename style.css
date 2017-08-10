@@ -7,7 +7,7 @@ body {
 
 h1 {
  text-align: center;
- margin-bottom: 50px;
+ margin-bottom: 30px;
 }
 
 #calculator {
@@ -17,35 +17,49 @@ h1 {
  flex-direction: row;
  flex-wrap: wrap;
  width: 500px;
- height: 500px;
+ height: 650px;
+ box-shadow: 2px 2px 15px 2px #2F4F4F;
+ border: 5px solid #2F4F4F;
 }
 
 #calculator button {
  font-size: 25px;
- border: 1px solid #dbe7f9;
+ border: 1px solid #2F4F4F;
  background-color: #4d4dff;
- color: white;
+ box-shadow: inset 1px 1px 5px #2F4F4F;
+ text-shadow: 1px 1px 2px #2F4F4F;
+ color: #E0EEEE;
  width: 25%;
- height: 25%;
+ height: 20%;
 }
 
 #calculator .operator {
  background-color: #8080ff;
- color: black;
+ color: #2F4F4F;
 }
 
 .display {
- border: 1px solid #dbe7f9;
- background-color: #4d4dff;
+ border: 1px solid #2F4F4F;
+ background-color: #E0EEEE;
+ box-shadow: inset 0px 0px 10px #2F4F4F;
  width: 74.6%;
- height: 24.6%;
- text-align: center;
- color: white;
- font-size: 50px;
+ height: 19.6%;
+}
+
+.display_value {
+ color: #2F4F4F;
+ font-size: 30px;
+ text-align: right;
+ padding-right: 20px;
+ padding-left: 20px;
+ margin-top: 12%;
 }
 
 #calculator button:focus {
  background-color: #8080ff;
- transition-delay: .5ms;
- transition-duration: .5ms;
+ outline: none;
+}
+
+#calculator .operator:focus {
+ color: #E0EEEE;
 }
