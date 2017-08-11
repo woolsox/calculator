@@ -33,14 +33,6 @@ body {
  background-color: #4682B4
 }
 
-#calculator .clear:focus {
- background-color: #63B8FF
-}
-
-#calculator .memory:focus {
- background-color: #63B8FF;
-}
-
 #calculator .memory {
  background-color: #4682B4;
 }
@@ -65,7 +57,7 @@ body {
  border: 1px solid #2F4F4F;
  background-color: #E0EEEE;
  box-shadow: inset 0px 0px 10px #2F4F4F;
- width: 59.75%;
+ width: 59.765%;
  height: 19.7%;
  overflow: scroll;
 }
@@ -88,14 +80,18 @@ body {
  word-wrap: break-word;
 }
 
-#calculator button:focus {
+#calculator button:hover {
  background-color: #63B8FF;
+}
+
+#calculator .operator:hover {
+ color: #E0EEEE;
+}
+
+#calculator button:focus {
  outline: none;
 }
 
-#calculator .operator:focus {
- color: #E0EEEE;
-}
 
 .display hr {
  margin: 0px;

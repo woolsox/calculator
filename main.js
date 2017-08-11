@@ -21,7 +21,8 @@ for (let i = 0; i < input.length; i++) {
 let sqRoot = document.querySelector('.sqRoot');
 
 sqRoot.addEventListener('click', function(){
-   let answer = (eval(evaluation));
+   lastEval = [];
+   let answer = (math.eval(evaluation));
    displayEval.innerHTML = Math.sqrt(answer);
    lastEval.push(display.innerHTML);
    lastEval.push(displayEval.innerHTML);
@@ -32,7 +33,7 @@ sqRoot.addEventListener('click', function(){
 let evaluate = document.querySelector('.evaluate');
 
 evaluate.addEventListener('click', function(){
-   let answer = (eval(evaluation));
+   let answer = (math.eval(evaluation));
    displayEval.innerHTML = answer.toLocaleString({minimumFractionDigits: 2});;
    lastEval.push(display.innerHTML);
    lastEval.push(displayEval.innerHTML)
