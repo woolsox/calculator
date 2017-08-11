@@ -1,75 +1,95 @@
 body {
  margin: 0, auto;
- font-family: Helvetica, sans-serif;
- background-color: #dbe7f9;
- height: 750px;
-}
-
-h1 {
- text-align: center;
- margin-bottom: 30px;
+ background-color: #F0F8FF;
+ height: 700px;
 }
 
 #calculator {
  margin: auto;
+ margin-top: 60px;
  display: flex;
  justify-content: space-around;
  flex-direction: row;
  flex-wrap: wrap;
- width: 500px;
+ width: 850px;
  height: 650px;
  box-shadow: 2px 2px 15px 2px #2F4F4F;
- border: 5px solid #2F4F4F;
+ border: 5px solid #525C65;
 }
 
 #calculator button {
- font-size: 25px;
- border: 1px solid #2F4F4F;
- background-color: #4d4dff;
+ font-family: "Passion One", Helvetica, sans-serif;
+ font-size: 30px;
+ border: 1px solid #525C65;
+ background-color: #42647F;
  box-shadow: inset 1px 1px 5px #2F4F4F;
  text-shadow: 1px 1px 2px #2F4F4F;
  color: #E0EEEE;
- width: 25%;
+ width: 20%;
  height: 20%;
 }
 
+#calculator .clear {
+ background-color: #4682B4
+}
+
+#calculator .clear:focus {
+ background-color: #63B8FF
+}
+
+#calculator .memory:focus {
+ background-color: #63B8FF;
+}
+
+#calculator .memory {
+ background-color: #4682B4;
+}
+
+#calculator .modulo {
+ height: 20%;
+ width: 20%;
+}
+
+#calculator .sqroot {
+ height: 20%;
+ width: 20%;
+}
+
 #calculator .operator {
- background-color: #8080ff;
- color: #2F4F4F;
+ background-color: #F0F8FF;
+ color: #525C65;
 }
 
 .display {
+ font-family: "Passion One", Helvetica, sans-serif;
  border: 1px solid #2F4F4F;
  background-color: #E0EEEE;
  box-shadow: inset 0px 0px 10px #2F4F4F;
- width: 74.6%;
- height: 19.6%;
+ width: 59.75%;
+ height: 19.7%;
+ overflow: scroll;
 }
 
 .display_value {
  margin: 0;
  color: #2F4F4F;
- font-size: 20px;
+ font-size: 25px;
  text-align: right;
- padding-right: 20px;
- padding-left: 20px;
- padding-top: 10px;
+ padding: 5px 25px;
  word-wrap: break-word;
 }
 
 .display_eval {
  margin: 0;
- color: #4d4dff;
- font-size: 20px;
+ color: #4682B4;
+ font-size: 40px;
  text-align: right;
- padding-right: 20px;
- padding-left: 20px;
- padding-top: 10px;
+ padding: 5px 25px;
  word-wrap: break-word;
 }
 
 #calculator button:focus {
- background-color: #8080ff;
+ background-color: #63B8FF;
  outline: none;
 }
 
@@ -78,5 +98,6 @@ h1 {
 }
 
 .display hr {
- border-color: #2F4F4F;
+ margin: 0px;
+ border-color: #E0EEEE;
 }
